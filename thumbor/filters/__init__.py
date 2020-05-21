@@ -31,7 +31,7 @@ def filter_method(*args, **kwargs):
             'name': fn.__name__,
             'params': args,
             'defaults': defaults,
-            'async': kwargs.get('async', False)
+            'async': kwargs.get('async_req', False)
         }
         return wrapper
     return _filter_deco

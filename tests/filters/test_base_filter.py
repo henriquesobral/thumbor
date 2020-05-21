@@ -115,7 +115,7 @@ class EmptyFilter(BaseFilter):
 
 
 class AsyncFilter(BaseFilter):
-    @filter_method(BaseFilter.String, async=True)
+    @filter_method(BaseFilter.String, async_req=True)
     def my_async_filter(self, callback, value):
         callback(value)
 
